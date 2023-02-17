@@ -1,7 +1,24 @@
+/*:root {...} es una pseudoclase que sirve para crear variables en css */
+/*colors*/
+:root {
+  --encabezados-h1: hsl(0, 0%, 100%);
+  --sub-titulos-h3: hsl(0, 0%, 0%)
+  --titulos-h3,4,5,6: hsl(0, 0%, 50%)
+  --background-color-grey: hsl(0, 0%, 50%)
+  --background-color-white: hsl(0, 0%, 100%)
+  --background-color-black: hsl(0, 0%, 0%)
+
+  /*constants*/
+  --bnt-principal: 6px;
+  --dobble-unit: 12px;
+  /*implementations*/
+}
+
 *,
 *:after,
 *:before {
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -11,21 +28,22 @@ body {
 }
 
 .container-guia-estilos {
-        background-color: rgb(170, 170, 170);
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-.encabezados-h1 {
-    color : var (encabezados-h1);
-    font-size : 40px;
+  background-color: rgb(170, 170, 170);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
-.sub-titulos-h3 {
-    color : var (sub-titulos-h2);
-font-size : 32px;
 
+.encabezados-h1 {
+  color: var encabezados-h1;
+  font-size: 24px;
 }
